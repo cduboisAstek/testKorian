@@ -24,7 +24,6 @@
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: never;
  
   display: inline-block;
   text-decoration: inherit;
@@ -57,7 +56,7 @@
  
 .icon-basket:before { content: '\e800'; } /* '' */
 .icon-users:before { content: '\e801'; } /* '' */
-.icon-moggle_icon:before { content: '\e802'; } /* '' */
+.icon-moggle:before { content: '\e802'; } /* '' */
 .icon-right-open:before { content: '\e803'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */

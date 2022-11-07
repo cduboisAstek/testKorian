@@ -1,23 +1,27 @@
 <template>
-    <section id="sectionIntro">
-        <div class="sectionIntro__currentEvent">
-          <img class="banner" src="../../../img/Banner.png" alt="Melodie of Alexandria Banner" />
-        </div>
-        <div class="sectionIntro__info">
-          <img src="../../../img/melodieofalexandria.png" alt="Melodie of Alexandria" />
-        </div>
-        <span class="sectionIntro__scroll">scroll</span>
-    </section>
+  <section id="sectionIntro">
+    <div class="sectionIntro__currentEvent">
+      <img class="banner" src="../../../img/Banner.png" alt="Melodie of Alexandria Banner" />
+    </div>
+    <div class="sectionIntro__info">
+      <img src="../../../img/melodieofalexandria.png" alt="Melodie of Alexandria" />
+      <div class="sectionIntro__cta">
+        <a href="" class="button-primary">En savoir plus</a>
+      </div>
+    </div>
+    <span class="sectionIntro__scroll">scroll</span>
+  </section>
 </template>
 
 <script>
 export default {
-    name: 'Intro',
+  name: 'Intro',
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../../../styles/variables";
+
 #sectionIntro {
   width: 100%;
   height: calc(100vh - 120px);
@@ -40,8 +44,12 @@ export default {
     width: 100%;
     text-align: center;
     position: absolute;
-    padding: 72px 0;
+    padding: 72px 0 20px;
     background-color: rgba($dark, .5);
+  }
+
+  .sectionIntro__cta {
+    margin: 40px;
   }
 
   .sectionIntro__scroll {
