@@ -6,7 +6,7 @@
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
-import './styles/app.css';
+import './styles/app.scss';
 
 // start the Stimulus application
 import './bootstrap';
@@ -14,9 +14,7 @@ import './bootstrap';
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import vuetify from './plugins/vuetify'
-
-import Home from './components/Home'
+import Home from './components/pages/Home'
 
 const routes = [
     { path: '/', component: Home, name: 'home' }
@@ -32,5 +30,4 @@ Vue.use(VueRouter)
 
 new Vue({
     router,
-    vuetify
 }).$mount('#app')

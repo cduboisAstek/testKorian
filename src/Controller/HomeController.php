@@ -14,7 +14,7 @@ class HomeController extends AbstractController
     public function index(): Response
     {
         return $this->render('vue/index.html.twig', [
-            'controller_name' => 'VueController',
+            'controller_name' => 'HomeController',
         ]);
     }
 }

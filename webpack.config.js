@@ -72,6 +72,14 @@ Encore
 
     // uncomment if you're having problems with a jQuery plugin
     //.autoProvidejQuery()
+
+    // processes files ending in .scss or .sass
+    .enableSassLoader()
+
+    // processes files ending in .less
+    .enableLessLoader()
+
+    // processes files ending in .styl
 ;
 
 module.exports = Encore.getWebpackConfig();
